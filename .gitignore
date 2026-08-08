@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+database.db
+logs/*.log
+static/audio/*.mp3
+static/audio/*.wav
+models/vosk-model-en-us-0.22/
+.DS_Store
+*.egg-info/

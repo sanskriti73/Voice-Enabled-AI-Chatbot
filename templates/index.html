@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width,initial-scale=1.0">
-    <title>Voiced AI chatbot</title>
-    <link rel="stylesheet"
-    herf="{{ url_for('static',
-    filename="style.css") }}">
-</head>
-<body>
-<div>
-    <h1>Welcome to the Voiced AI chatbot</h1>
-    <div id="chat-box"> </div>
-    <div class="input-area"><input type="text" id="message"
-         placeholder="Type your message...">
-    <button onclick="sendMessage()">Send</button></div>
-    <p>Welcome to the Voiced AI chatbot! my MCA final year project.</p>
-    <button onclick="startChat()">Start Chat</button>
-</div>  
-<script src="{{url_for("static",
-filename="script.js")}}"></script>
-</body>
+{% extends "base.html" %}
+{% block title %}Chat &mdash; Voice-Enabled AI Chatbot{% endblock %}
+ 
+{% block content %}
+<section class="chat-container">
+    <div id="chat-window" class="chat-window" aria-live="polite"></div>
+ 
+    <form id="chat-form" class="chat-form">
+        <input type="text" id="text-input" placeholder="Type a message..." autocomplete="off">
+        <button type="submit" id="send-btn">Send</button>
+        <button type="button" id="mic-btn" aria-label="Record voice message">&#127908;</button>
+    </form>
+ 
+    <p id="status-line" class="status-line"></p>
+</section>
+{% endblock %}
+ 
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/recorder.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
 
-</html>
+

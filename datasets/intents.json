@@ -1,0 +1,30 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "good morning", "good evening", "is anyone there"],
+      "responses": ["Hello! How can I help you today?", "Hi there!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "exit", "quit"],
+      "responses": ["Goodbye! Have a great day.", "See you soon!"]
+    },
+    {
+      "tag": "library_hours",
+      "patterns": ["what time does the library open", "library hours", "when does the library close"],
+      "responses": ["The library is open from 9 AM to 8 PM, Monday through Saturday."]
+    },
+    {
+      "tag": "course_registration",
+      "patterns": ["how do I register for a course", "course enrollment process", "registration deadline"],
+      "responses": ["You can register for courses through the student portal under 'Course Registration'."]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["I'm not sure I understood that — could you rephrase your question?"]
+    }
+  ]
+}
+
