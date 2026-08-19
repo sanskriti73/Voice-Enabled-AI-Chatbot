@@ -65,7 +65,7 @@ class SpeechRecognizer:
                 return text
             logger.warning("Online ASR returned empty result, falling back to offline.")
         except Exception as exc:  # network error, quota error, etc.
-            logger.warning("Online ASR failed (%s); falling back to offline Vosk.", exc)
+            logger.warning("Online ASR failed (%s); falling back to offline Vosk.", exc_info=exc)
  
         return self._transcribe_offline(pcm_audio)
  

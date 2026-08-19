@@ -14,7 +14,7 @@ import logging
 import pickle
 import re
 import string
- 
+import numpy as np 
 import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
@@ -72,8 +72,10 @@ class NLUPipeline:
         """Returns (intent_label: str, confidence: float)."""
         cleaned = self.preprocess(text)
  
-        probabilities = self.classifier.predict_proba([cleaned])[0]
+        probabilities = np.array(self.classifier.predict_proba([cleaned])[0])
         classes = self.classifier.classes_
+        if len(probabilities) == 0:
+            return config.FALLBACK_INTENT, 0.0
         best_idx = probabilities.argmax()
         intent, confidence = classes[best_idx], float(probabilities[best_idx])
  

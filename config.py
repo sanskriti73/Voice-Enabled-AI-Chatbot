@@ -65,7 +65,12 @@ FALLBACK_INTENT = "fallback"
 KB_MATCH_THRESHOLD = 0.60
 DIALOGPT_MODEL_NAME = "microsoft/DialoGPT-medium"
 DIALOGPT_MAX_HISTORY_TURNS = 4
- 
+
+
+class Config:
+    # ... existing settings
+    OLLAMA_MODEL = "llama3.2"
+    USE_OLLAMA = True  # switch between local Ollama
 # ---------------------------------------------------------------------------
 # TTS (Text-to-Speech) settings
 # ---------------------------------------------------------------------------
@@ -78,11 +83,8 @@ TTS_VOICE_VOLUME = 1.0
 TTS_LANGUAGE = "en"
 TTS_CACHE_MAX_FILES = 200
  
-# ---------------------------------------------------------------------------
-# Claude / LLM API (optional cloud-augmented response mode)
-# ---------------------------------------------------------------------------
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-CLAUDE_MODEL = "claude-sonnet-4-6"
+
+
  
 # ---------------------------------------------------------------------------
 # Logging

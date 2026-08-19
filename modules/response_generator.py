@@ -1,9 +1,24 @@
-"""
-modules/response_generator.py
-Hybrid response generation: Knowledge-Base (KB/FAQ) lookup combined with
-a neural fallback (DialoGPT) for open-domain small talk.
- 
-Flow:
+import ollama
+from config import Config
+
+class ResponseGenerator:
+    def __init__(self):
+        self.model = Config.OLLAMA_MODEL
+
+    def generate_response(self, user_input, conversation_history=None):
+        messages = conversation_history or []
+        messages.append({'role': 'user', 'content': user_input})
+
+        try:
+            response = ollama.chat(
+                model=self.model,
+                messages=messages
+            )
+            return response['message']['content']
+        except Exception as e:
+            return f"Sorry, I couldn't generate a response right now. ({str(e)})"
+
+"""Flow:
     1. If the dialogue act is GREET / FAREWELL / CLARIFY -> canned templates.
     2. If ANSWER -> try to match the query against the FAQ knowledge base
        using TF-IDF cosine similarity.
@@ -139,4 +154,3 @@ class ResponseGenerator:
  
         # act == DialogueAct.FALLBACK
         return random.choice(_FALLBACKS)
-
