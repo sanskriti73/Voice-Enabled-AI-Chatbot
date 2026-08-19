@@ -1,6 +1,6 @@
 # Voice-Enabled AI Chatbot System
  
-MCSP-232 IGNOU MCA Capstone Project.
+MCSP-232 IGNOU MCA  Project.
  
 A Flask-based web application that lets a user talk (or type) to an AI
 chatbot. Speech is transcribed with a dual-mode ASR engine (offline
