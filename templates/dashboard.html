@@ -1,37 +1,33 @@
 {% extends "base.html" %}
-{% block title %}Dashboard &mdash; Voice-Enabled AI Chatbot{% endblock %}
- 
+{% block title %}Dashboard — Voice-Enabled AI Chatbot{% endblock %}
 {% block content %}
 <section class="dashboard">
-    <h2>Analytics Overview</h2>
- 
-    <div class="stat-cards">
-        <div class="stat-card">
-            <span class="stat-value">{{ stats.total_conversations }}</span>
-            <span class="stat-label">Conversations</span>
-        </div>
-        <div class="stat-card">
-            <span class="stat-value">{{ stats.total_messages }}</span>
-            <span class="stat-label">Messages</span>
-        </div>
-        <div class="stat-card">
-            <span class="stat-value">{{ stats.avg_confidence }}</span>
-            <span class="stat-label">Avg. Intent Confidence</span>
-        </div>
+  <h2>Analytics Overview</h2>
+  <div class="stat-cards">
+    <div class="stat-card">
+      <span class="stat-value">{{ stats.total_conversations }}</span>
+      <span class="stat-label">Conversations</span>
     </div>
- 
-    <h3>Top Intents</h3>
-    <table class="intent-table">
-        <thead>
-            <tr><th>Intent</th><th>Count</th></tr>
-        </thead>
-        <tbody>
-            {% for intent, count in stats.top_intents %}
-            <tr><td>{{ intent }}</td><td>{{ count }}</td></tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <div class="stat-card">
+      <span class="stat-value">{{ stats.total_messages }}</span>
+      <span class="stat-label">Messages</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value">{{ stats.avg_confidence }}</span>
+      <span class="stat-label">Avg. Intent Confidence</span>
+    </div>
+  </div>
+
+  <h3>Top Intents</h3>
+  <table class="intent-table">
+    <thead><tr><th>Intent</th><th>Count</th></tr></thead>
+    <tbody>
+      {% for intent, count in stats.top_intents %}
+      <tr><td>{{ intent }}</td><td>{{ count }}</td></tr>
+      {% else %}
+      <tr><td colspan="2">No intent data yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </section>
 {% endblock %}
- 
-

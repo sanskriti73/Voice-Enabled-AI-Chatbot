@@ -1,23 +1,18 @@
 {% extends "base.html" %}
-{% block title %}Chat &mdash; Voice-Enabled AI Chatbot{% endblock %}
- 
+{% block title %}Chat — Voice-Enabled AI Chatbot{% endblock %}
 {% block content %}
 <section class="chat-container">
-    <div id="chat-window" class="chat-window" aria-live="polite"></div>
- 
-    <form id="chat-form" class="chat-form">
-        <input type="text" id="text-input" placeholder="Type a message..." autocomplete="off">
-        <button type="submit" id="send-btn">Send</button>
-        <button type="button" id="mic-btn" aria-label="Record voice message">&#127908;</button>
-    </form>
- 
-    <p id="status-line" class="status-line"></p>
+  <div id="chat-window" class="chat-window" aria-live="polite"></div>
+  <form id="chat-form" class="chat-form">
+    <input type="text" id="text-input" maxlength="500"
+           placeholder="Type a message..." autocomplete="off">
+    <button type="submit" id="send-btn">Send</button>
+    <button type="button" id="mic-btn" aria-label="Record voice message">🎤</button>
+  </form>
+  <p id="status-line" class="status-line" aria-live="polite"></p>
 </section>
 {% endblock %}
- 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/recorder.js') }}"></script>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 {% endblock %}
-
-

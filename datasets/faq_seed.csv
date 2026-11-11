@@ -1,6 +1,59 @@
 question,answer,category
-What are the library timings?,The library is open from 9 AM to 8 PM, Monday through Saturday.,library
-How do I register for a course?,You can register for courses through the student portal under 'Course Registration'.,academics
+What are the library timings?,"The library is open from 9 AM to 8 PM, Monday through Saturday.",library
+How do I get a library card?,Submit your student ID at the library counter to get a library card issued on the same day.,library
+How many books can I borrow at once?,Students can borrow up to 3 books at a time for a period of 14 days.,library
+Can I renew a borrowed library book?,"Yes, books can be renewed once for another 14 days if no one else has requested them.",library
+What happens if I return a library book late?,A fine of Rs. 2 per day is charged for books returned after the due date.,library
+Is the library open during semester breaks?,The library remains open with reduced hours (10 AM to 4 PM) during semester breaks.,library
+Does the library have e-books or online journals?,"Yes, students can access e-books and journals through the library's digital portal using their student login.",library
+How do I register for a course?,You can register for courses through the student portal under Course Registration.,academics
+Where can I find my class timetable?,Your class timetable is available on the student portal under Academics > Timetable.,academics
+Where can I find the syllabus for my course?,The syllabus for each course is available under Academics > Syllabus on the student portal.,academics
+What is the minimum attendance requirement?,A minimum of 75% attendance is required to be eligible to appear for semester exams.,academics
+How can I check my attendance percentage?,You can check your attendance percentage on the student portal under Academics > Attendance.,academics
+How do I apply for attendance condonation?,Attendance condonation requests can be submitted to your department along with a medical certificate or valid reason.,academics
+Can I change my elective subject after registration?,"Elective changes are allowed only within the first two weeks of the semester, subject to seat availability.",academics
+Who do I contact for academic advising?,Your assigned faculty mentor handles academic advising; their contact details are listed on the department page.,academics
 Where can I check my exam results?,Exam results are published on the student results portal under the Examinations tab.,examinations
-How do I reset my student portal password?,Click 'Forgot Password' on the login page and follow the email verification steps.,it_support
+When is the exam date sheet released?,The exam date sheet is published on the student portal at least two weeks before exams begin.,examinations
+How do I apply for revaluation of my answer sheet?,Revaluation requests can be submitted through the student portal under Examinations > Revaluation within 15 days of result declaration.,examinations
+What is the passing marks criteria?,Students must score a minimum of 40% in each subject and an overall aggregate of 40% to pass.,examinations
+Can I get a duplicate marksheet?,Duplicate marksheets can be requested from the Examination Cell along with the prescribed fee and application form.,examinations
+What happens if I miss an exam due to illness?,Students who miss an exam due to illness may apply for a supplementary exam with a valid medical certificate.,examinations
+How do I download my admit card?,"Admit cards can be downloaded from the student portal under Examinations > Admit Card, usually one week before exams.",examinations
 What is the fee payment deadline?,Fee payment deadlines are announced each semester on the notice board and student portal.,finance
+How can I pay my semester fees online?,"Fees can be paid online through the Student Portal under Fee Payment using net banking, UPI, or card.",finance
+What is the fee structure for the MCA program?,The detailed fee structure for the MCA program is available on the college website under Admissions > Fee Structure.,finance
+Is a late fee charged for delayed payment?,"Yes, a late fee is charged if fees are paid after the announced deadline; the amount increases the longer payment is delayed.",finance
+Can I pay my fees in installments?,Fee installment options are available on request; contact the Accounts Office for the applicable schedule.,finance
+Am I eligible for a scholarship?,Scholarship eligibility criteria and application details are listed on the college website under Student Services > Scholarships.,finance
+How do I apply for a fee refund?,"Fee refund requests can be submitted to the Accounts Office within 30 days of withdrawal, as per the refund policy.",finance
+How do I reset my student portal password?,Click 'Forgot Password' on the login page and follow the email verification steps to reset your password.,it_support
+How do I connect to the campus WiFi?,Connect to the 'Campus-WiFi' network and log in using your student portal credentials.,it_support
+What do I do if the WiFi is not working?,"Restart your device and try reconnecting; if the issue persists, raise a ticket with IT Support through the student portal.",it_support
+How do I get access to my college email account?,College email credentials are issued during orientation; contact IT Support if you have not received them.,it_support
+Can I access the student portal from my phone?,"Yes, the student portal is mobile-responsive and can also be accessed via the college mobile app.",it_support
+Who do I contact for laptop or software issues in the lab?,Report lab hardware or software issues to the IT Support desk located near the computer lab.,it_support
+How do I apply for hostel accommodation?,Hostel accommodation applications are submitted through the Student Portal under Hostel Services.,hostel
+What is the hostel fee?,"Hostel fee details, including room type options, are listed on the college website under Admissions > Fee Structure.",hostel
+Is mess facility included in the hostel fee?,"Yes, mess charges are included in the hostel fee and cover three meals a day.",hostel
+What is the hostel curfew timing?,The hostel gate closes at 10 PM on weekdays and 11 PM on weekends; late entry requires prior warden approval.,hostel
+Can I change my hostel room?,Room change requests can be submitted to the hostel warden and are approved based on availability.,hostel
+Is there a college bus service?,"Yes, the college operates bus services on multiple routes; route details are available under Student Services > Transport.",transport
+How do I get a bus pass?,Bus passes can be applied for through the Student Portal > Transport section at the start of each semester.,transport
+What are the bus timings?,Bus timings vary by route and are published on the Transport notice board and student portal.,transport
+When do campus placements start?,Placement drives typically begin in the final semester; schedules are shared by the Training & Placement Cell.,placement
+How do I register for placements?,Placement registration is done through the student portal under Placement Cell > Registration.,placement
+Which companies visit for campus recruitment?,A list of companies participating in campus recruitment is updated on the Placement Cell notice board each semester.,placement
+Does the college offer internship assistance?,"Yes, the Training & Placement Cell assists students in securing internships with partner companies.",placement
+How do I apply for admission to the MCA program?,Admission applications can be submitted online through the college website under Admissions.,admission
+What is the eligibility criteria for MCA admission?,Candidates must hold a bachelor's degree with at least 50% marks and mathematics at the 10+2 or graduation level.,admission
+What documents are required for admission?,"Required documents include mark sheets, transfer certificate, migration certificate, category certificate (if applicable), and photographs.",admission
+Is there an entrance exam for admission?,"Admission is based on either a merit list or an entrance exam score, depending on the program; check the official notification for details.",admission
+How do I get a bonafide certificate?,Bonafide certificate requests can be submitted through the Student Portal under Certificate Requests.,administration
+How do I apply for a transcript?,"Transcript requests can be submitted through the Student Portal under Certificate Requests, along with the applicable fee.",administration
+How do I get a duplicate ID card?,You can request a duplicate ID card by submitting an application at the Administration Office along with the applicable fee.,administration
+How do I apply for leave?,"Leave applications can be submitted through the Student Portal under Leave Request, along with supporting documents if applicable.",administration
+What time does the canteen open?,The college canteen is open from 8 AM to 6 PM on all working days.,campus_life
+What sports facilities are available on campus?,"The college offers a gymnasium, indoor games room, and outdoor sports grounds for cricket, football, and basketball.",campus_life
+How do I join a student club or society?,Student clubs and societies accept new members at the start of each semester; details are shared during orientation and on the notice board.,campus_life

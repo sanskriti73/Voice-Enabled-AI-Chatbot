@@ -2,29 +2,492 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["hello", "hi", "hey", "good morning", "good evening", "is anyone there"],
-      "responses": ["Hello! How can I help you today?", "Hi there!"]
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "is anyone there",
+        "hello chatbot",
+        "hi there",
+        "hey there",
+        "greetings",
+        "yo",
+        "hiya",
+        "namaste",
+        "hello bot"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! Ask me anything about the college."
+      ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["bye", "goodbye", "see you later", "exit", "quit"],
-      "responses": ["Goodbye! Have a great day.", "See you soon!"]
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "exit",
+        "quit",
+        "see you",
+        "good night",
+        "catch you later",
+        "talk to you later",
+        "i am leaving",
+        "close chat",
+        "end chat",
+        "that's all for now"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you soon!",
+        "Bye! Feel free to come back anytime."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "thank you so much",
+        "appreciate it",
+        "thanks for the help",
+        "great, thanks",
+        "ok thank you",
+        "thanks buddy",
+        "much appreciated"
+      ],
+      "responses": [
+        "You're welcome! Let me know if you need anything else.",
+        "Happy to help!",
+        "Anytime! Is there anything else I can help with?"
+      ]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": [
+        "who are you",
+        "what are you",
+        "are you a bot",
+        "are you human",
+        "what is your name",
+        "tell me about yourself",
+        "what can you do",
+        "how do you work",
+        "are you a real person"
+      ],
+      "responses": [
+        "I'm the college's AI voice assistant. I can answer questions about academics, exams, library, fees, and more.",
+        "I'm a virtual assistant here to help you with college-related queries."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "i need help",
+        "can you help me",
+        "what can i ask you",
+        "what topics can you help with",
+        "how do i use this chatbot",
+        "give me some examples",
+        "what should i ask"
+      ],
+      "responses": [
+        "You can ask me about library hours, course registration, exam schedules, results, fees, hostel, Wi-Fi, or ID card issues. Just type or speak your question.",
+        "I can help with academics, examinations, finance, hostel, IT support, and placement queries. What would you like to know?"
+      ]
     },
     {
       "tag": "library_hours",
-      "patterns": ["what time does the library open", "library hours", "when does the library close"],
-      "responses": ["The library is open from 9 AM to 8 PM, Monday through Saturday."]
+      "patterns": [
+        "what time does the library open",
+        "library hours",
+        "when does the library close",
+        "is the library open today",
+        "library timing",
+        "when can i visit the library",
+        "library opening hours",
+        "is the library open on sunday",
+        "what are the library working hours",
+        "library schedule"
+      ],
+      "responses": [
+        "The library is open from 9 AM to 8 PM, Monday through Saturday."
+      ]
+    },
+    {
+      "tag": "library_membership",
+      "patterns": [
+        "how do i get a library card",
+        "library membership process",
+        "how to join the library",
+        "library card application",
+        "do i need id to enter library",
+        "how many books can i borrow",
+        "library book issue limit",
+        "book renewal process"
+      ],
+      "responses": [
+        "You can get a library card by submitting your student ID at the library counter. Students can borrow up to 3 books for 14 days, renewable once."
+      ]
     },
     {
       "tag": "course_registration",
-      "patterns": ["how do I register for a course", "course enrollment process", "registration deadline"],
-      "responses": ["You can register for courses through the student portal under 'Course Registration'."]
+      "patterns": [
+        "how do i register for a course",
+        "course enrollment process",
+        "registration deadline",
+        "how can i enroll in a course",
+        "course registration",
+        "last date to register for courses",
+        "how to add a subject",
+        "how to drop a course",
+        "where do i register for classes",
+        "semester registration steps"
+      ],
+      "responses": [
+        "You can register for courses through the student portal under Course Registration."
+      ]
     },
     {
-      "tag": "fallback",
-      "patterns": [],
-      "responses": ["I'm not sure I understood that — could you rephrase your question?"]
+      "tag": "timetable",
+      "patterns": [
+        "what is my class timetable",
+        "when is my next class",
+        "class schedule",
+        "where can i find the timetable",
+        "timetable for this semester",
+        "when do classes start",
+        "class timings",
+        "lecture schedule"
+      ],
+      "responses": [
+        "Your class timetable is available on the student portal under Academics > Timetable."
+      ]
+    },
+    {
+      "tag": "syllabus",
+      "patterns": [
+        "where can i find the syllabus",
+        "course syllabus",
+        "what is covered in this subject",
+        "syllabus for this semester",
+        "curriculum details",
+        "subject wise syllabus"
+      ],
+      "responses": [
+        "The syllabus for each course is available under Academics > Syllabus on the student portal."
+      ]
+    },
+    {
+      "tag": "attendance",
+      "patterns": [
+        "how do i check my attendance",
+        "what is my attendance percentage",
+        "attendance record",
+        "minimum attendance required",
+        "am i eligible for exams based on attendance",
+        "attendance shortage",
+        "how to apply for attendance condonation"
+      ],
+      "responses": [
+        "You can check your attendance percentage on the student portal under Academics > Attendance. A minimum of 75% attendance is required to be eligible for exams."
+      ]
+    },
+    {
+      "tag": "exam_schedule",
+      "patterns": [
+        "when are the exams",
+        "exam schedule",
+        "exam timetable",
+        "when does the semester exam start",
+        "date sheet for exams",
+        "when is my next exam",
+        "exam dates",
+        "final exam schedule"
+      ],
+      "responses": [
+        "The exam schedule is published on the student portal under Examinations > Date Sheet at least two weeks before exams begin."
+      ]
+    },
+    {
+      "tag": "exam_results",
+      "patterns": [
+        "where can i check my exam results",
+        "when will results be declared",
+        "how do i see my grades",
+        "result declaration date",
+        "semester result",
+        "how to check marksheet",
+        "when are results published",
+        "grade card download"
+      ],
+      "responses": [
+        "Exam results are published on the student results portal under the Examinations tab."
+      ]
+    },
+    {
+      "tag": "revaluation",
+      "patterns": [
+        "how do i apply for revaluation",
+        "recheck my answer sheet",
+        "grade recheck process",
+        "revaluation fee",
+        "how to request re-evaluation of marks",
+        "answer sheet review"
+      ],
+      "responses": [
+        "You can apply for revaluation through the student portal under Examinations > Revaluation within 15 days of result declaration, subject to the applicable fee."
+      ]
+    },
+    {
+      "tag": "admission_process",
+      "patterns": [
+        "how do i apply for admission",
+        "admission process",
+        "eligibility criteria for admission",
+        "when do admissions open",
+        "documents required for admission",
+        "how to apply for mca",
+        "entrance exam for admission",
+        "admission deadline"
+      ],
+      "responses": [
+        "Admission details, eligibility criteria, and application deadlines are listed on the college website under Admissions."
+      ]
+    },
+    {
+      "tag": "fee_payment",
+      "patterns": [
+        "what is the fee payment deadline",
+        "how do i pay my fees",
+        "fee payment process",
+        "online fee payment",
+        "last date for fee submission",
+        "fee due date",
+        "how can i pay semester fees",
+        "fee payment portal"
+      ],
+      "responses": [
+        "Fee payment deadlines are announced each semester on the notice board and student portal. Fees can be paid online through the Student Portal > Fee Payment section."
+      ]
+    },
+    {
+      "tag": "fee_structure",
+      "patterns": [
+        "what is the fee structure",
+        "how much are the semester fees",
+        "total course fee",
+        "fee breakdown",
+        "hostel fee amount",
+        "tuition fee details",
+        "fee installment options"
+      ],
+      "responses": [
+        "The detailed fee structure for each program is available on the college website under Admissions > Fee Structure."
+      ]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "am i eligible for a scholarship",
+        "scholarship application process",
+        "how to apply for financial aid",
+        "scholarship deadline",
+        "merit scholarship",
+        "government scholarship scheme",
+        "how much scholarship can i get"
+      ],
+      "responses": [
+        "Scholarship eligibility and application details are listed on the college website under Student Services > Scholarships."
+      ]
+    },
+    {
+      "tag": "it_support_password",
+      "patterns": [
+        "how do i reset my student portal password",
+        "forgot my password",
+        "unable to login to portal",
+        "reset password",
+        "password recovery process",
+        "i am locked out of my account",
+        "change my login password"
+      ],
+      "responses": [
+        "Click 'Forgot Password' on the login page and follow the email verification steps to reset your password."
+      ]
+    },
+    {
+      "tag": "wifi_access",
+      "patterns": [
+        "how do i connect to campus wifi",
+        "wifi password",
+        "wifi not working",
+        "how to get internet access on campus",
+        "campus network login",
+        "wifi login credentials"
+      ],
+      "responses": [
+        "Connect to the 'Campus-WiFi' network and log in using your student portal credentials. Contact IT support if you face connectivity issues."
+      ]
+    },
+    {
+      "tag": "id_card",
+      "patterns": [
+        "how do i get my id card",
+        "lost my student id card",
+        "id card replacement",
+        "when will i receive my id card",
+        "duplicate id card process",
+        "id card not working"
+      ],
+      "responses": [
+        "You can request a new or duplicate ID card by submitting an application at the Administration Office along with the applicable fee."
+      ]
+    },
+    {
+      "tag": "hostel_accommodation",
+      "patterns": [
+        "how do i apply for hostel",
+        "hostel accommodation process",
+        "hostel fee",
+        "is hostel available for students",
+        "hostel room allotment",
+        "hostel rules",
+        "how to get a hostel room",
+        "hostel application deadline"
+      ],
+      "responses": [
+        "Hostel accommodation applications are submitted through the Student Portal > Hostel Services. Allotment is based on availability and distance from home."
+      ]
+    },
+    {
+      "tag": "transport",
+      "patterns": [
+        "is there a college bus service",
+        "bus route information",
+        "how do i get a bus pass",
+        "transport facility",
+        "bus timing",
+        "college shuttle service"
+      ],
+      "responses": [
+        "College bus routes, timings, and pass application details are available under Student Services > Transport."
+      ]
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "when do placements start",
+        "placement process",
+        "companies visiting for placement",
+        "how do i register for placements",
+        "placement cell contact",
+        "internship opportunities",
+        "campus recruitment schedule"
+      ],
+      "responses": [
+        "Placement drives and registration details are shared by the Training & Placement Cell via the student portal and college notice board."
+      ]
+    },
+    {
+      "tag": "faculty_contact",
+      "patterns": [
+        "how do i contact my professor",
+        "faculty email address",
+        "hod contact details",
+        "who teaches this subject",
+        "faculty office hours",
+        "how to reach my mentor"
+      ],
+      "responses": [
+        "Faculty contact details and office hours are listed on the college website under Departments > Faculty."
+      ]
+    },
+    {
+      "tag": "certificate_request",
+      "patterns": [
+        "how do i get a bonafide certificate",
+        "transcript request process",
+        "how to apply for a migration certificate",
+        "character certificate application",
+        "degree certificate collection"
+      ],
+      "responses": [
+        "Certificate requests (bonafide, transcript, migration, character) can be submitted through the Student Portal > Certificate Requests section."
+      ]
+    },
+    {
+      "tag": "leave_application",
+      "patterns": [
+        "how do i apply for leave",
+        "leave application process",
+        "medical leave procedure",
+        "how to inform about absence",
+        "leave approval process"
+      ],
+      "responses": [
+        "Leave applications can be submitted through the Student Portal > Leave Request, along with supporting documents if applicable."
+      ]
+    },
+    {
+      "tag": "canteen",
+      "patterns": [
+        "what time does the canteen open",
+        "canteen menu",
+        "is the canteen open today",
+        "food court timings"
+      ],
+      "responses": [
+        "The college canteen is open from 8 AM to 6 PM on all working days."
+      ]
+    },
+    {
+      "tag": "sports_facilities",
+      "patterns": [
+        "what sports facilities are available",
+        "how do i join the sports club",
+        "gym timings",
+        "sports ground booking",
+        "indoor games facility"
+      ],
+      "responses": [
+        "The college offers a gymnasium, indoor games room, and outdoor sports grounds. Contact the Sports Office to join a club or book facilities."
+      ]
+    },
+    {
+      "tag": "affirm",
+      "patterns": [
+        "yes",
+        "yeah",
+        "sure",
+        "correct",
+        "that's right",
+        "yes please",
+        "ok"
+      ],
+      "responses": [
+        "Great, let's continue."
+      ]
+    },
+    {
+      "tag": "deny",
+      "patterns": [
+        "no",
+        "nope",
+        "not really",
+        "no thanks",
+        "that's not right"
+      ],
+      "responses": [
+        "Alright, let me know if there's something else I can help with."
+      ]
     }
   ]
 }
-

@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Voice-Enabled AI Chatbot{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:,">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Voice-Enabled AI Chatbot{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-    <header class="site-header">
-        <h1>Voice-Enabled AI Chatbot System</h1>
-        <nav>
-            <a href="{{ url_for('index') }}">Chat</a>
-            <a href="{{ url_for('dashboard') }}">Dashboard</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <h1>Voice-Enabled AI Chatbot System</h1>
+    <nav>
+      <a href="{{ url_for('index') }}">Chat</a>
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>{% block content %}{% endblock %}</main>
+
+  <footer class="site-footer">
+    <p>MCSP-232  Project — Voice-Enabled AI Chatbot System</p>
+  </footer>
+
+  <!-- Socket.IO client is served locally for offline-capable deployment. -->
+  <script src="{{ url_for('static', filename='js/socket.io.min.js') }}"></script>
+
  
-    <main>
-        {% block content %}{% endblock %}
-    </main>
- 
-    <footer class="site-footer">
-        <p>MCSP-232  Project &mdash; Voice-Enabled AI Chatbot System</p>
-    </footer>
- 
-    <script src="{{ url_for('static', filename='js/socket.io.min.js') }}"></script>
-    {% block scripts %}{% endblock %}
+  {% block scripts %}{% endblock %}
 </body>
 </html>
- 
